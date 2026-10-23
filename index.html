@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" class="js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- EDIT: page title + description -->
+<title>Project Name</title>
+<meta name="description" content="One-sentence description of the project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/site.js" defer onerror="document.documentElement.classList.remove('js')"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" aria-label="Project">
+  <a class="nav-title" href="#top">Project Name</a>
+  <div class="explore">
+    <button class="pill out" id="exploreBtn" type="button" aria-expanded="false" aria-controls="exploreMenu">Explore</button>
+    <div class="explore-menu" id="exploreMenu" hidden>
+      <a href="#highlights">Highlights</a>
+      <a href="#overview">Overview</a>
+      <a href="#method">How it works</a>
+      <a href="#closer">Take a closer look</a>
+      <a href="#results">Results</a>
+      <a href="#why">Why it works</a>
+      <a href="#compare">Side by side</a>
+      <a href="#faq">Questions</a>
+      <a href="#cite">Paper and citation</a>
+    </div>
+  </div>
+  <a class="pill out hide-sm" href="#">Paper</a>
+  <a class="pill solid" href="#closer">Watch</a>
+</nav>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow rv">Project Name</p>
+    <h1 class="hx rv">A bold one-line claim <br>about your work.</h1>
+    <p class="hero-sub rv">A short subtitle that says what it is, in plain words.</p>
+  </div>
+  <div class="wrap-mid hero-stage">
+    <div class="ph media rv">
+      <!-- EDIT: hero video. hero_sm.mp4 is served to phones by site.js -->
+      <video id="heroV" src="media/hero.mp4" data-src-sm="media/hero_sm.mp4" poster="media/hero_poster.jpg" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-label="Camera flythrough of a school building."></video>
+      <button class="vbtn" id="heroBtn" type="button" aria-label="Pause the video"><svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 2.5h3.4v13H4zM10.6 2.5H14v13h-3.4z" fill="currentColor"/></svg></button>
+    </div>
+    <div class="buy">
+      <p>Headline result in one line.<span>A smaller line of context underneath.</span></p>
+      <a class="cta" href="#">Paper</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HIGHLIGHTS (carousel) ================= -->
+<section class="sec band clip" id="highlights" aria-roledescription="carousel" aria-label="Highlights">
+  <div class="wrap headrow">
+    <h2 class="hl-head rv">Get the highlights.</h2>
+    <a class="lnk rv" href="media/hero.mp4" data-film>Watch the film <svg viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="8" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M7.2 5.8v6.4l5-3.2z" fill="currentColor"/></svg></a>
+  </div>
+  <div class="track" id="hlTrack">
+    <article class="hcard" aria-roledescription="slide" aria-label="1 of 3" data-dwell="7">
+      <h3>First highlight, line one.<br>And a short line two.</h3>
+      <div class="ph media"><video src="media/hero_sm.mp4#t=0" muted playsinline loop preload="metadata"></video></div>
+    </article>
+    <article class="hcard" aria-roledescription="slide" aria-label="2 of 3" data-dwell="7">
+      <h3>Second highlight, line one.<br>And a short line two.</h3>
+      <div class="ph media"><video src="media/hero_sm.mp4#t=15" muted playsinline loop preload="metadata"></video></div>
+    </article>
+    <article class="hcard" aria-roledescription="slide" aria-label="3 of 3" data-dwell="7">
+      <h3>Third highlight, line one.<br>And a short line two.</h3>
+      <div class="ph media"><video src="media/hero_sm.mp4#t=30" muted playsinline loop preload="metadata"></video></div>
+    </article>
+  </div>
+  <div class="pager-row">
+    <div class="pager" id="hlPager" role="group" aria-label="Choose a highlight"></div>
+    <button class="playbtn" id="hlPlay" type="button" aria-label="Pause highlights"><svg viewBox="0 0 18 18" aria-hidden="true"><path id="hlPlayIcon" d="M4 2.5h3.4v13H4zM10.6 2.5H14v13h-3.4z" fill="currentColor"/></svg></button>
+  </div>
+</section>
+
+<!-- ================= OVERVIEW (story section) ================= -->
+<section class="sec" id="overview">
+  <div class="wrap-copy story-head">
+    <p class="eyebrow rv">Overview</p>
+    <h2 class="hx rv">Short claim. <br>Second beat.</h2>
+    <p class="lede rv">Two or three sentences that explain the problem and your idea. Keep it plain. <b>End with the single sentence you want people to remember.</b></p>
+  </div>
+  <div class="wrap render rv">
+    <div class="ph">Image or video · 21:9 on desktop, 4:5 on phone</div>
+  </div>
+  <div class="wrap split">
+    <p class="copy rv">A supporting paragraph for the figure above. <b>Bold the key phrase</b> and keep the rest grey, so the eye lands on the point.</p>
+    <div class="ratio rv">
+      <div>
+        <p class="ratio-n">&gt;50×</p>
+        <p class="ratio-l">faster than the baseline</p>
+        <div class="bars">
+          <div class="bar" style="--w:2%;--c:var(--blue)"><b>Ours</b><span>3 h</span><i></i></div>
+          <div class="bar" style="--w:100%"><b>Baseline</b><span>168 h</span><i></i></div>
+        </div>
+      </div>
+      <div>
+        <p class="ratio-n">10×</p>
+        <p class="ratio-l">less of some other cost</p>
+        <div class="bars">
+          <div class="bar" style="--w:10%;--c:var(--blue)"><b>Ours</b><span>1 unit</span><i></i></div>
+          <div class="bar" style="--w:100%"><b>Baseline</b><span>10 units</span><i></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOW IT WORKS ================= -->
+<section class="sec band" id="method">
+  <div class="wrap-copy story-head">
+    <p class="eyebrow rv">How it works</p>
+    <h2 class="hx rv">One loop. <br>Four steps.</h2>
+    <p class="lede rv">One sentence that describes the method at a high level.</p>
+  </div>
+  <div class="wrap steps">
+    <div class="step rv"><h3>Collect</h3><p>What happens in step one.</p></div>
+    <div class="step rv"><h3>Fit</h3><p>What happens in step two.</p></div>
+    <div class="step rv"><h3>Imagine</h3><p>What happens in step three.</p></div>
+    <div class="step rv"><h3>Update</h3><p>What happens in step four, which feeds back to step one.</p></div>
+  </div>
+</section>
+
+<!-- ================= CLOSER LOOK (tabs) ================= -->
+<section class="sec" id="closer">
+  <div class="wrap-copy story-head">
+    <h2 class="hx rv">Take a closer look.</h2>
+  </div>
+  <div class="wrap">
+    <div class="seg rv" id="lookTabs" role="group" aria-label="Choose a scenario">
+      <button type="button" aria-pressed="true" data-t="0" data-cap="<b>Scenario A.</b> One sentence about what to watch for.">Scenario A</button>
+      <button type="button" aria-pressed="false" data-t="15" data-cap="<b>Scenario B.</b> One sentence about what to watch for.">Scenario B</button>
+      <button type="button" aria-pressed="false" data-t="30" data-cap="<b>Scenario C.</b> One sentence about what to watch for.">Scenario C</button>
+    </div>
+    <div class="pair rv">
+      <figure>
+        <div class="ph media"><video class="look-v" src="media/hero_sm.mp4" muted playsinline loop preload="metadata"></video></div>
+        <figcaption><b>Baseline</b> · label for the left clip</figcaption>
+      </figure>
+      <figure>
+        <div class="ph media"><video class="look-v" src="media/hero_sm.mp4" muted playsinline loop preload="metadata"></video></div>
+        <figcaption><b>Ours</b> · label for the right clip</figcaption>
+      </figure>
+    </div>
+    <p class="tab-cap" id="lookCap"><b>Scenario A.</b> One sentence about what to watch for.</p>
+  </div>
+</section>
+
+<!-- ================= RESULTS (table) ================= -->
+<section class="sec band" id="results">
+  <div class="wrap-copy story-head">
+    <p class="eyebrow rv">Results</p>
+    <h2 class="hx rv">179. 25. None.</h2>
+    <p class="lede rv">A sentence that reads the numbers for the reader. <b>Say the conclusion outright.</b></p>
+  </div>
+  <div class="wrap-mid">
+    <div class="ftile rv">
+      <table class="ftable">
+        <caption>Main results per task group</caption>
+        <thead><tr><th scope="col">Group</th><th scope="col">Baseline A</th><th scope="col">Baseline B</th><th scope="col">Ours</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Task group 1</th><td>22</td><td>2</td><td class="best">0</td></tr>
+          <tr><th scope="row">Task group 2</th><td>44</td><td>1</td><td class="best">0</td></tr>
+          <tr><th scope="row">Task group 3</th><td>9</td><td>0</td><td class="best">0</td></tr>
+          <tr><th scope="row">Task group 4</th><td>28</td><td>8</td><td class="best">0</td></tr>
+        </tbody>
+        <tfoot><tr><th scope="row">Total</th><td>103</td><td>11</td><td class="best">0</td></tr></tfoot>
+      </table>
+      <p class="fnote">A note on how the table was measured.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY IT WORKS (stat tiles) ================= -->
+<section class="sec" id="why">
+  <div class="wrap-copy story-head">
+    <h2 class="hx rv">Why it works.</h2>
+  </div>
+  <div class="wrap tiles">
+    <div class="tile rv"><h3>First reason, as a claim</h3><p class="num">0.01</p><p><b>What the number is.</b> A line of context.</p></div>
+    <div class="tile rv"><h3>Second reason, as a claim</h3><p class="num">&gt;10×</p><p><b>What the number is.</b> A line of context.</p></div>
+    <div class="tile rv"><h3>Third reason, as a claim</h3><p class="num">~64×</p><p><b>What the number is.</b> A line of context.</p></div>
+  </div>
+</section>
+
+<!-- ================= SIDE BY SIDE ================= -->
+<section class="sec band" id="compare">
+  <div class="wrap-copy story-head">
+    <h2 class="hx rv">Side by side.</h2>
+  </div>
+  <div class="wrap-copy sbs rv">
+    <div class="sbs-h"><b>Baseline</b><span>prior work</span></div>
+    <div class="sbs-h"><b>Ours</b><span>this paper</span></div>
+    <div class="sbs-row"><h4>Hardware</h4><div><b>128</b><span>GPUs</span></div><div class="win"><b>1</b><span>GPU</span></div></div>
+    <div class="sbs-row"><h4>Training time</h4><div><b>168 h</b><span>7 days</span></div><div class="win"><b>3 h</b><span>one afternoon</span></div></div>
+    <div class="sbs-row"><h4>Success rate</h4><div><b>82%</b><span>on benchmark</span></div><div class="win"><b>97%</b><span>on benchmark</span></div></div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+  <div class="wrap-copy">
+    <h2 class="hl-head rv">Questions? Answers.</h2>
+    <div class="faq-top"><button class="faq-all" id="faqAll" type="button" aria-expanded="false">Expand all</button></div>
+    <div class="faq">
+      <details><summary>Is the comparison fair?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><div class="ans"><p><b>Short direct answer.</b> Then a sentence or two of detail.</p></div></details>
+      <details><summary>What does it need to run?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><div class="ans"><p><b>Short direct answer.</b> Then a sentence or two of detail.</p></div></details>
+      <details><summary>Does it work in the real world?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><div class="ans"><p><b>Short direct answer.</b> Then a sentence or two of detail.</p></div></details>
+      <details><summary>Will the code be released?<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 7.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></summary><div class="ans"><p><b>Short direct answer.</b> Then a sentence or two of detail.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CITATION ================= -->
+<section class="sec band cite" id="cite">
+  <div class="wrap-copy">
+    <p class="eyebrow rv">Venue 2026</p>
+    <h2 class="rv">Full Paper Title: A Descriptive Subtitle</h2>
+    <p class="authors rv"><a href="#">Author One</a>*, <a href="#">Author Two</a>*, <a href="#">Author Three</a>, <a href="#">Author Four</a>†</p>
+    <p class="aff rv">Institution · *Equal contribution · †Equal advising</p>
+    <div class="btns rv"><a class="cta" href="#">Paper</a><a class="cta ghost" href="#">Code</a><a class="cta ghost" href="media/hero.mp4" data-film>Video</a></div>
+    <div class="bib rv">
+      <div class="bib-head"><span>BibTeX</span><button type="button" id="bibCopy">Copy</button></div>
+<pre id="bibText">@inproceedings{author2026project,
+  title     = {Full Paper Title: A Descriptive Subtitle},
+  author    = {One, Author and Two, Author and Three, Author and Four, Author},
+  booktitle = {Venue},
+  year      = {2026}
+}</pre>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap-copy">
+    <ol>
+      <li>Footnote one: definitions or measurement details.</li>
+      <li>Footnote two.</li>
+    </ol>
+    <p>© 2026 Project Name</p>
+  </div>
+</footer>
+
+<dialog class="film" id="film">
+  <button class="film-x" type="button" aria-label="Close"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  <video controls playsinline preload="none"></video>
+</dialog>
+</body>
+</html>
